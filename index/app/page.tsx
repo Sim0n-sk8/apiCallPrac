@@ -8,14 +8,27 @@ function apiCall() {
   const [error, setError] = useState(null);
 }
 
+const api = 'https://jsonplaceholder.typicode.com/todos';
+
+useEffect(() => {
+  fetch(api)
+
+    .then(response => {
+      if(!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+      })
+
+      
+
+}, []);
 
 
-const api = "https://jsonplaceholder.typicode.com/todos";
 
 
-fetch(api);
 
-.then(response.data);
+
 
 
 export default function Home() {
