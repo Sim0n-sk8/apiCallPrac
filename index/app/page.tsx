@@ -7,7 +7,6 @@ function ApiCall() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-
 const api = 'https://jsonplaceholder.typicode.com/todos';
 
 useEffect(() => {
@@ -42,16 +41,8 @@ useEffect(() => {
             <pre>{JSON.stringify(data, null, 2)}</pre>
           </div>
 
-        ); 
-
-        
-
+        );
   };
-
-
-
-
-
 
 export default function Home() {
   return (
