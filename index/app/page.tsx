@@ -14,7 +14,7 @@ useEffect(() => {
 
     .then(response => {
       if(!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(`HUH`);
       }
       return response.json();
       })
