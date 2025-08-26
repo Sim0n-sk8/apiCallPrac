@@ -32,7 +32,7 @@ useEffect(() => {
         }, []);
 
         if(loading) return <div>Loading data...</div>;
-        if(error) return <div>Error</div>;
+        if(error) return <div>HUH</div>;
 
         return(
 
